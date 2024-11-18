@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Invités</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+    <script src="https://unpkg.com/html5-qrcode/minified/html5-qrcode.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Gestion des Invités</h1>
+        <input type="text" id="guestName" placeholder="Nom de l'invité">
+        <input type="text" id="tableName" placeholder="Nom de la table">
+        <button id="addGuestButton">Ajouter Invité</button>
+        <ul id="guestList"></ul>
+        <div id="qrCodeContainer"></div>
+
+        <h2>Scanner le QR Code</h2>
+        <div id="reader" style="width: 300px;"></div>
+        <button id="startScanButton">Démarrer le Scan</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
